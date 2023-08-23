@@ -1,9 +1,9 @@
 import Navbar from "./(shared)/Navbar";
 import Footer from "./(shared)/Footer";
 import "./globals.css";
-import { Open_Sans } from "next/font/google";
+// import { Open_Sans } from "next/font/google";
 
-const openSans = Open_Sans({ subsets: ["latin"] });
+// const openSans = Open_Sans({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Blog AI App",
@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ko" className={openSans.className}>
+    <html lang="ko">
       <body>
         <Navbar />
         {children}
